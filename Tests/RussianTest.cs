@@ -13,8 +13,7 @@ namespace Tests
         [Fact]
         public void TestRussian()
         {
-            var summer = new RussianPeasantMultiplier();
-            var result = summer.Multiply(18, 23);
+            var result = RussianPeasant.RussianPeasantMultiplier.Multiply(18, 23);
             Assert.Equal(414, result);
         }
     }

@@ -39,8 +39,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NextNumberPairGenerator.cs" />
-    <Compile Include="NumberSeriesCreator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RussianPeasantMultiplier.cs" />
   </ItemGroup>

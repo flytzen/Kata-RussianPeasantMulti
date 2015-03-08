@@ -21,16 +21,10 @@ namespace RussianPeasant
             while (currentValue != null)
             {
                 yield return currentValue;
-                currentValue = CalculateNextPair(currentValue);
+                currentValue = currentValue.Item1 <= 1 
+                    ? null 
+                    : new Tuple<int, int>(currentValue.Item1 / 2, currentValue.Item2 * 2);
             }
-        }
-
-        private static Tuple<int, int> CalculateNextPair(Tuple<int, int> input)
-        {
-            if (input.Item1 <= 1) return null;
-            var outputLeft = input.Item1 / 2;
-            var outputRight = input.Item2 * 2;
-            return new Tuple<int, int>(outputLeft, outputRight);
         }
     }
 }
